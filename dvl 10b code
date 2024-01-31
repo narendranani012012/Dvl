@@ -1,0 +1,27 @@
+import plotly.express as px
+# Sample data creation
+data = t
+'City': I'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix']
+'Lat': [40.7128, 34.0522, 41.8781, 29.7604, 33.44841,
+'Lon': [-74.0060, -118.2437, -87.6298, -95.3698, -112.07401,
+'Population': [8419600, 3980400, 2716000, 2328000, 16800001
+df = pd.DataFrame(data)
+# Plotting the map
+fig = px.scatter_geodf, lat='Lat', lon='Lon', text='City', size='Population', title='City Populations',
+projection='natural earth')
+# Show the plot
+fig. show()
+
+#code for reading from csv
+
+limport pandas as pd
+limport plotly. express as px
+# Read data from CSV file
+filename = "your_data.csv"
+df = pd. read_csv (filename)
+# Create Scatter Geo Map
+fig = px.scatter_geo (
+df, Lat= 'Lat', Lon= ' Lon', text='city', size='Population', title='City Population',
+projection= 'natural earth'
+# Replace with the actual CSV filename
+fig. show()
