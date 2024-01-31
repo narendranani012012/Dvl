@@ -1,0 +1,23 @@
+import plotly express as px
+import pandas as pd
+# Sample data (replace this with your time series data)
+data = 1
+'Date': pd. date_range(start='2022-01-01', periods=10, freq='D'),
+'Value': [25, 30, 22, 40, 35, 28, 45, 50, 38, 42]
+小｝
+df = pd. DataFrame (data)
+# Create Time Series plot
+fig = px.line(df, x='Date', y='Value', title='Time Series Plot')
+fig. show()
+
+#code for reading data from csv
+
+import plotly. express as px
+limport pandas as pd
+filename = "C: \Users| BMSIT \Desktop\\csv"
+df = pd.read_csv(filename)
+df l'arrival_date'] = pd.to_datetime(dfl'arrival_date'])
+figapx. line(df,x='arrival_date'
+uy= 'min_price',title='time series plot')
+fig. show()
+  
